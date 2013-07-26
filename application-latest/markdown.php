@@ -220,9 +220,10 @@ class Markdown_Parser {
 		#    its line, otherwise they're not matched here and will be taken as 
 		#    inline later.
 		# *  List "b" is made of tags which are always block-level;
+		#    removed block quote interfering at the moment
 		#
 		$block_tags_a = 'ins|del';
-		$block_tags_b = 'p|div|h[1-6]|blockquote|pre|table|dl|ol|ul|address|'.
+		$block_tags_b = 'p|div|h[1-6]|pre|table|dl|ol|ul|address|'. 
 						'script|noscript|form|fieldset|iframe|math';
 
 		# Regular expression for the content of a block tag.
