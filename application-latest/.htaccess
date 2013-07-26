@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|stamp-images|images|img|captcha|uploads|data|css|js|dojo|textemplates|chili|goog|colorbox|user_guide|robots\.txt|favicon\.ico)
+RewriteRule ^(.*)$ index.php/$1 [L]
+AddType image/svg+xml .svg .svgz
+AddType application/pdf .pdf
